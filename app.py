@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, request
-from views.watchmework import WatchMeWorkView
+from views.keyword import KeyWordView
 
 app = Flask(__name__)
 
@@ -9,7 +9,12 @@ def home():
 
 @app.route('/keywords', methods = ['GET'])
 def get_keywords():
-    return WatchMeWorkView.get_keywords()
+    return KeyWordView.get_keywords()
+
+@app.route('/entities', methods = ['GET'])
+def get_entities():
+    return KeyWordView.get_entities()
+
 
 if __name__ == '__main__':
     app.run(debug = True)
