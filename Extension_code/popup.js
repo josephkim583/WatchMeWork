@@ -157,8 +157,8 @@ function triggersearch(){
   var urlTemplate = "https://www.googleapis.com/customsearch/v1?key=%KEY%&cx=%CX%&q=%Q%&callback=hndlr";
 
   // Script-specific credentials & search engine
-  var ApiKey = "AIzaSyDrQnfbZgg3sgX7hqJaYlNy88gL8UZsa5U";
-  var searchEngineID = "016946273156636846852:8aa7ymixbca";
+  var ApiKey = "******************";
+  var searchEngineID = "************";
   // Build custom url
   var url = urlTemplate
     .replace("%KEY%", (ApiKey))
