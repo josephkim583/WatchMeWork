@@ -1,0 +1,28 @@
+{
+    "name": "Watch me Work",
+    "version": "1.0",
+    "description": "Search from this page!",
+    "permissions": ["activeTab", "declarativeContent", "storage","http://*/","https://*/"],
+    "options_page": "options.html",
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "content_security_policy": "script-src 'self' https://www.googleapis.com; object-src 'self' https://www.googleapis.com; connect-src 'self' https://www.googleapis.com;",
+    "page_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/eye.png",
+        "32": "images/eye.png",
+        "48": "images/eye.png",
+        "128": "images/eye.png"
+      }
+    },
+    "icons": {
+      "16": "images/eye.png",
+      "32": "images/eye.png",
+      "48": "images/eye.png",
+      "128": "images/eye.png"
+    },
+    "manifest_version": 2
+}

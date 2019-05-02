@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons1.css">
+    <!-- The CSS package above applies Google styling to buttons and other elements. -->
+
+    <style>
+    .branding-below {
+      bottom: 56px;
+      top: 0;
+      height: 300px;
+      width: 250px;
+    }
+    .branding-text {
+      left: 7px;
+      position: relative;
+      top: 3px;
+    }
+    .col-contain {
+      overflow: hidden;
+    }
+    .col-one {
+      float: left;
+      width: 50%;
+    }
+    .logo {
+      vertical-align: middle;
+    }
+    .radio-spacer {
+      height: 20px;
+    }
+    .width-100 {
+      width: 100%;
+    }
+    </style>
+  </head>
+
+  <body>
+    <div class="branding-below">
+      <form>
+        <div class="block" id="button-bar">
+        <!--
+        <div class="btn-group">
+            <button class="green" id="run-google-search">More General</button>
+            <button class="orange" id="run-google-search">More Specific</button>
+        </div>
+        -->
+
+        <div style = "display: flex; justify-content: space-between">
+           <p style="font-size: 25px; margin: 0; margin-top: 5px"> Results </p>
+           <button class="blue" id="run-google-search">Search</button>
+        </div>
+        <div>
+            <p> Use the slider to determine the scope of the search </p>
+        </div>
+
+        <div style = "display: flex; justify-content: space-between">
+           <p style="font-size: 10px; margin: 0; margin-top: 5px"> Less Specific </p>
+           <p style="font-size: 10px; margin: 0; margin-top: 5px"> More Specific</p>
+        </div>
+
+        <div>
+         <center> <input id="specificity_val" style = " width: 100%" type="range" list="tickmarks" min="0" max="3"></center>
+          <datalist id="tickmarks">
+            <option value="0">
+            <option value="1">
+            <option value="2">
+            <option value="3">
+          </datalist>
+        </div>
+
+
+        <select id = "drop_val">
+           <option value="Google">Google</option>
+           <option value="News">News</option>
+        </select>
+
+        <div class="block form-group" id = "query_results">
+
+        </div>
+        <div class="block form-group" id = "intro" style = "font-style: italic; color: blue;">
+          Contextual Search will find materials from the rest of the internet based on the content of your document. Press Search to run the contextual search.
+        </div>
+
+      </form>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

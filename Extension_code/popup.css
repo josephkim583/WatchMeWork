@@ -1,0 +1,11 @@
+#main-button{
+  height:30px;
+  width: 30px;
+  background-color: blue;
+}
+
+div {
+  height: 2500px;
+  width: 500px;
+  outline: none;
+}
